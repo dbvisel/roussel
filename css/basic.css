@@ -1,0 +1,210 @@
+/* BASICS */
+
+body {
+  background: #fff;
+	font-family: "Sorts Mill Goudy", "Garamond Premier Pro", "Georgia", "Times New Roman", serif;
+	font-weight: normal;
+  color: #000;
+	font-size: 18px;
+	line-height: 24pt;
+	margin:0;
+}
+
+.main {
+	margin-top:40px;
+	margin-bottom:0;
+	background:white;
+	width:1080px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40px;
+}
+
+.centercolumn {
+	position:relative;
+	left:240px;
+	width:600px;
+  z-index:1;
+}
+
+p {
+	margin:0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+a {
+	color:red;
+	text-decoration:none;
+}
+
+a:hover { 
+	color: #ff6600; 
+	background-color: #fff;
+	text-decoration: underline; 
+}
+
+a:active { 
+	text-decoration: none; 
+}
+
+
+a:visited { 
+	text-decoration: none; 
+	color: red;
+}
+
+
+
+/* TITLE PAGE */
+
+.title-block {
+	margin-bottom:40px;
+}
+
+
+.author {
+	font-size: 24pt;
+	text-align: center;
+	margin-bottom: 10pt;
+}
+
+.title {
+	font-size: 18pt;
+	text-align: center;
+	margin-bottom: 10pt;
+}
+
+.date {
+	font-size: 18pt;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 20pt;
+}
+
+.toc-block {
+	margin-bottom:40px;
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.romantoc {
+	list-style-type:upper-roman;
+	line-height:24px;
+}
+
+.intro-block p + p {
+	text-indent:24px;
+}
+
+/* NAVIGATION */
+
+.nav-block {
+	font-family: "Helvetica Neue", "Helvetica", "Arial";
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-size:10pt;
+	line-height:18pt;
+	text-align:center;
+
+	position:fixed;
+	float:left;
+	top:40px;
+	padding-left:40px;
+	width:200px;
+}
+
+.nav-header {
+	margin-top:18px;
+}
+
+.nav-block a {
+	color:black;
+	font-weight:bold;
+}
+
+.nav-block a:visited {
+	color:#black;
+}
+
+/* POEM PAGES */
+
+
+.poem-block {
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.chapterhead {
+	font-size: 36pt;
+	margin-bottom: 20px;
+
+}
+
+.chaptersubhead {
+	font-size: 18pt;
+	margin-bottom: 40px;
+}
+
+.chaptersubsubhead {
+	font-style:italic;
+	font-size: 14pt;
+  margin-top:-30px;
+	margin-bottom: 40pt;
+}
+
+.sc {
+	font-style:normal;
+	font-variant:small-caps;
+	letter-spacing: 1px;
+}
+
+.poemtext a {
+	color:red;
+}
+
+
+p sup { line-height: 0; }
+
+
+.left {
+    text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+
+.footnote {
+	position:relative;
+	left:40px;
+}
+
+
+/* footnotes fit column unless they're the tail
+   end of a line only */
+
+
+.footnote > .partial + .partial {
+    width: 450px;
+}
+.footnote > .partial + .partial.last {
+    width: auto;
+}
+
+.partial {
+    xdisplay: inline-block; /* jquery sets this when animating anyway */
+    vertical-align: top;
+}
+.content.footnote:hover > .partial {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
