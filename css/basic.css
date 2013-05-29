@@ -2,7 +2,7 @@
 
 body {
   background: #fff;
-	font-family: "Sorts Mill Goudy", "Garamond Premier Pro", "Georgia", "Times New Roman", serif;
+	font-family: "Sorts Mill Goudy", "Garamond Premier Pro", "Georgia", serif;
 	font-weight: normal;
   color: #000;
 	font-size: 18px;
@@ -188,13 +188,13 @@ p sup { line-height: 0; }
 }
 
 
-/* footnotes fit column unless they're the tail
-   end of a line only */
+/* footnotes fit column unless they're the tail end of a line only */
 
 
 .footnote > .partial + .partial {
     width: 450px;
 }
+
 .footnote > .partial + .partial.last {
     width: auto;
 }
@@ -203,6 +203,7 @@ p sup { line-height: 0; }
     xdisplay: inline-block; /* jquery sets this when animating anyway */
     vertical-align: top;
 }
+
 .content.footnote:hover > .partial {
     cursor: pointer;
     text-decoration: underline;
