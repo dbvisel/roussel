@@ -1,0 +1,259 @@
+/* BASICS */
+
+body {
+  background: #fff;
+  font-family: "Sorts Mill Goudy", "Garamond Premier Pro", "Georgia", "Times New Roman", serif;
+	font-weight: normal;
+  color: #000;
+	font-size: 18px;
+	line-height: 24pt;
+	margin:0;
+}
+
+.main {
+	background:white;
+	width:1080px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.centercolumn {
+	position:relative;
+	left:240px;
+	width:650px;
+  z-index:1;
+}
+
+.frontmatter {
+	padding-top:40px;
+	margin-bottom:8em;
+	margin-left:50px;
+}
+
+p {
+	margin:0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+a {
+	color:red;
+	text-decoration:none;
+}
+
+a:hover { 
+	color: #ff6600; 
+	background-color: #fff;
+	text-decoration: underline; 
+}
+
+a:active { 
+	text-decoration: none; 
+}
+
+
+a:visited { 
+	text-decoration: none; 
+	color: red;
+}
+
+
+
+/* TITLE PAGE */
+
+.title-block {
+	margin-bottom:40px;
+}
+
+
+.author {
+	font-size: 24pt;
+	text-align: center;
+	margin-bottom: 10pt;
+}
+
+.title {
+	font-size: 18pt;
+	text-align: center;
+	margin-bottom: 10pt;
+}
+
+.date {
+	font-size: 18pt;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 20pt;
+}
+
+.toc-block {
+	margin-bottom:40px;
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.romantoc {
+	list-style-type:upper-roman;
+	line-height:24px;
+}
+
+.intro-block p + p {
+	text-indent:24px;
+}
+
+/* NAVIGATION */
+
+.nav-block {
+	font-family: "Helvetica Neue", "Helvetica", "Arial";
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-size:10pt;
+	line-height:18pt;
+	text-align:center;
+
+	position:fixed;
+	float:left;
+	top:40px;
+	padding-left:40px;
+	width:200px;
+}
+
+.nav-header {
+	margin-top:18px;
+}
+
+.nav-block a {
+	color:black;
+	font-weight:bold;
+}
+
+.nav-block a:hover {
+	text-decoration:none;
+	color:red;
+}
+
+.nav-block a:visited {
+	color:#black;
+}
+
+/* POEM PAGES */
+
+
+.poem-block {
+	padding-top:40px;
+	width:600px;
+	margin-left:50px;
+	margin-bottom:4em;
+}
+
+.chapterhead {
+	padding-top:10px;
+	font-size: 36pt;
+	margin-bottom: 20px;
+
+}
+
+.chaptersubhead {
+	font-size: 18pt;
+	margin-bottom: 40px;
+}
+
+.chaptersubsubhead {
+	font-style:italic;
+	font-size: 14pt;
+  margin-top:-30px;
+	margin-bottom: 40pt;
+}
+
+.sc {
+	font-style:normal;
+	font-variant:small-caps;
+	letter-spacing: 1px;
+}
+
+.poemtext a {
+	color:red;
+}
+
+
+p sup { line-height: 0; }
+
+
+.left {
+    text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+
+.footnote {
+	position:relative;
+	left:40px;
+}
+
+
+/* footnotes fit column unless they're the tail
+   end of a line only */
+
+
+.footnote > .partial + .partial {
+    width: 450px;
+}
+.footnote > .partial + .partial.last {
+    width: auto;
+}
+
+.partial {
+    xdisplay: inline-block; /* jquery sets this when animating anyway */
+    vertical-align: top;
+}
+.content.footnote:hover > .partial {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* navigation arrows */
+
+/* navigation */
+
+#leftarrow,#rightarrow {
+	background-color:black;
+	background-color:rgba(0,0,0,.25);
+	color:white;
+	font-family: "Sorts Mill Goudy", "Futura", "Helvetica Neue", "Helvetica";
+	font-size:60px;
+	width:50px;
+	height:42px;
+	text-align:center;
+	padding-top:8px;
+	z-index:99999;
+	position:fixed;
+	bottom:0;
+}
+
+#leftarrow {
+	border-top-right-radius:10px;
+	left:0;
+}
+
+#leftarrow:hover {
+	text-decoration: none;
+	background-color:rgba(0,0,0,.35);
+}
+
+#rightarrow {
+	border-top-left-radius:10px;
+	right:0;
+}
+
+#rightarrow:hover {
+	text-decoration: none;
+	background-color:rgba(0,0,0,.35);
+}
+
