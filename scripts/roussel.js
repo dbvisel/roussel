@@ -1,8 +1,11 @@
+/************** what this needs 
+/--footnotes coloring right?
+/--a couple of loose parentheses
+/--keyboard listener?
+/*****************************/
+
 var sections = ["section0","section1","section2","section3","section4"];
 var currentsection = 0;
-
-var footnotes = new Array;
-var fnpattern = new RegExp("fn[0-9]");
 
 var partials = new Array;
 
@@ -11,12 +14,7 @@ function partial(idname,level) {
     this.level = level;
 }
 
-
 // keyboard listener
-
-// process parentheses
-
-
 
 // coloring!
 
